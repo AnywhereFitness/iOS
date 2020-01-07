@@ -7,6 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
         <array key="Raleway-Regular.ttf">
             <string>Raleway-Regular</string>
         </array>
@@ -84,6 +87,9 @@
                                                                 <state key="normal" title="For Clients">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <segue destination="wRD-3g-iQv" kind="show" id="WbR-YE-uwd"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Axv-L1-X6S">
                                                                 <rect key="frame" x="200" y="0.0" width="180" height="35"/>
@@ -95,6 +101,9 @@
                                                                 <state key="normal" title="For Instructors">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <segue destination="Hrv-HC-2mn" kind="show" id="VN7-JW-hb2"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -145,6 +154,96 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P87-RP-eeC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="618.84057971014499" y="133.92857142857142"/>
+        </scene>
+        <!--Instructor Sign Up View Controller-->
+        <scene sceneID="LyK-eR-rpk">
+            <objects>
+                <viewController id="Hrv-HC-2mn" customClass="InstructorSignUpViewController" customModule="AnywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kdh-PC-3sy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewl-DA-Ued">
+                                <rect key="frame" x="133.5" y="124" width="147.5" height="47"/>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ygF-fE-yg9">
+                                <rect key="frame" x="20" y="291" width="374" height="230"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0LK-mN-KQi">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="FJh-7t-OMG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="( ___ ) ___ - ____" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6cQ-ae-CVq">
+                                        <rect key="frame" x="0.0" y="85" width="374" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="3dS-h7-DbY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Webiste (To confirm credentials)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l9f-96-FjP">
+                                        <rect key="frame" x="0.0" y="170" width="374" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="94P-ta-KTK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Va-ST-5ty">
+                                <rect key="frame" x="20" y="661" width="374" height="60"/>
+                                <color key="backgroundColor" red="0.74109476799999996" green="0.74122357370000003" blue="0.74108666180000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="RVL-2L-8Zl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="18"/>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7mp-71-Tbh" firstAttribute="trailing" secondItem="ygF-fE-yg9" secondAttribute="trailing" constant="20" id="DQW-UO-rto"/>
+                            <constraint firstItem="ewl-DA-Ued" firstAttribute="centerX" secondItem="kdh-PC-3sy" secondAttribute="centerX" id="S7N-1v-obP"/>
+                            <constraint firstItem="0Va-ST-5ty" firstAttribute="leading" secondItem="7mp-71-Tbh" secondAttribute="leading" constant="20" id="dXN-G7-gWF"/>
+                            <constraint firstItem="ygF-fE-yg9" firstAttribute="leading" secondItem="7mp-71-Tbh" secondAttribute="leading" constant="20" id="k1K-VA-gJP"/>
+                            <constraint firstItem="0Va-ST-5ty" firstAttribute="top" secondItem="ygF-fE-yg9" secondAttribute="bottom" constant="140" id="m81-5w-aO3"/>
+                            <constraint firstItem="7mp-71-Tbh" firstAttribute="trailing" secondItem="0Va-ST-5ty" secondAttribute="trailing" constant="20" id="qGh-qb-qdV"/>
+                            <constraint firstItem="ygF-fE-yg9" firstAttribute="top" secondItem="ewl-DA-Ued" secondAttribute="bottom" constant="120" id="sFO-IF-LhN"/>
+                            <constraint firstItem="ewl-DA-Ued" firstAttribute="top" secondItem="7mp-71-Tbh" secondAttribute="top" constant="80" id="smU-Dz-dss"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7mp-71-Tbh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dCd-Jc-vWn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YMG-bA-Tjb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.75362318840587" y="862.5"/>
+        </scene>
+        <!--Client Sign Up View Controller-->
+        <scene sceneID="DeD-cR-Wn2">
+            <objects>
+                <viewController id="wRD-3g-iQv" customClass="ClientSignUpViewController" customModule="AnywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SUB-MD-ysa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="O9y-s3-TwT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LUr-WA-wu9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mna-xV-zhZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="261" y="863"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qEk-iP-zxC">
