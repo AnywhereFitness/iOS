@@ -6,6 +6,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Intro Screen View Controller-->
         <scene sceneID="gQ7-4o-cKO">
@@ -15,18 +23,118 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launch-screen-bg" translatesAutoresizingMaskIntoConstraints="NO" id="Bfw-Uw-6FM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch-screen-bg" translatesAutoresizingMaskIntoConstraints="NO" id="Bfw-Uw-6FM">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BHS-eW-9qf">
-                                <rect key="frame" x="-8" y="0.0" width="422" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BHS-eW-9qf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MP2-9D-pMP">
+                                        <rect key="frame" x="109" y="116" width="196" height="97"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anywhere" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAf-RV-BZ6">
+                                                <rect key="frame" x="0.0" y="0.0" width="196" height="48.5"/>
+                                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="41"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fitness" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0p6-BK-OJR">
+                                                <rect key="frame" x="0.0" y="48.5" width="196" height="48.5"/>
+                                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="41"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The world is your gym." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BnP-SF-y7Q">
+                                        <rect key="frame" x="101.5" y="266" width="212.5" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8SU-lw-zbz">
+                                        <rect key="frame" x="156" y="290.5" width="95.5" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zWX-vL-08F">
+                                        <rect key="frame" x="0.0" y="719" width="420" height="177"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="SX5-l7-Juk">
+                                                <rect key="frame" x="20" y="22" width="380" height="89.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIf-GH-hyC">
+                                                        <rect key="frame" x="155" y="0.0" width="70.5" height="22.5"/>
+                                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="19"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZY9-S9-cYK">
+                                                        <rect key="frame" x="0.0" y="54.5" width="380" height="35"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgq-SN-Tdn">
+                                                                <rect key="frame" x="0.0" y="0.0" width="180" height="35"/>
+                                                                <color key="backgroundColor" red="1" green="0.5742782354" blue="0.1243593469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="4CZ-nJ-5cw"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="19"/>
+                                                                <state key="normal" title="For Clients">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Axv-L1-X6S">
+                                                                <rect key="frame" x="200" y="0.0" width="180" height="35"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="p6E-Hs-FBV"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="19"/>
+                                                                <state key="normal" title="For Instructors">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="SX5-l7-Juk" secondAttribute="trailing" constant="20" id="7WZ-Zh-gDU"/>
+                                            <constraint firstItem="SX5-l7-Juk" firstAttribute="top" secondItem="zWX-vL-08F" secondAttribute="top" constant="22" id="daA-zR-p1c"/>
+                                            <constraint firstItem="SX5-l7-Juk" firstAttribute="leading" secondItem="zWX-vL-08F" secondAttribute="leading" constant="20" id="uqb-hK-5Q7"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80320202464788737" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="BnP-SF-y7Q" firstAttribute="top" secondItem="MP2-9D-pMP" secondAttribute="bottom" constant="53" id="0WT-ku-agD"/>
+                                    <constraint firstItem="zWX-vL-08F" firstAttribute="centerX" secondItem="BnP-SF-y7Q" secondAttribute="centerX" constant="2.5" id="5Bs-gj-5qp"/>
+                                    <constraint firstItem="zWX-vL-08F" firstAttribute="top" secondItem="BHS-eW-9qf" secondAttribute="top" constant="719" id="5oa-td-Hzv"/>
+                                    <constraint firstItem="8SU-lw-zbz" firstAttribute="top" secondItem="BnP-SF-y7Q" secondAttribute="bottom" constant="1" id="7q6-Di-yhb"/>
+                                    <constraint firstAttribute="bottom" secondItem="zWX-vL-08F" secondAttribute="bottom" id="8au-pJ-GM3"/>
+                                    <constraint firstItem="8SU-lw-zbz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BHS-eW-9qf" secondAttribute="leading" symbolic="YES" id="EXk-c2-BAQ"/>
+                                    <constraint firstItem="zWX-vL-08F" firstAttribute="leading" secondItem="BHS-eW-9qf" secondAttribute="leading" id="QiD-58-4Z3"/>
+                                    <constraint firstItem="BnP-SF-y7Q" firstAttribute="top" secondItem="BHS-eW-9qf" secondAttribute="top" constant="266" id="gzb-Mi-BTe"/>
+                                    <constraint firstItem="zWX-vL-08F" firstAttribute="centerX" secondItem="MP2-9D-pMP" secondAttribute="centerX" constant="3" id="ke9-iY-lZc"/>
+                                    <constraint firstAttribute="trailing" secondItem="8SU-lw-zbz" secondAttribute="trailing" constant="162.5" id="neO-Hh-0WF"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BHS-eW-9qf" firstAttribute="bottom" secondItem="Bfw-Uw-6FM" secondAttribute="bottom" id="BVM-cM-e5l"/>
+                            <constraint firstItem="BHS-eW-9qf" firstAttribute="leading" secondItem="PPG-3d-MqE" secondAttribute="leading" id="L9R-06-YNH"/>
+                            <constraint firstItem="BHS-eW-9qf" firstAttribute="top" secondItem="Bfw-Uw-6FM" secondAttribute="top" id="UDT-Av-EYJ"/>
+                            <constraint firstItem="BHS-eW-9qf" firstAttribute="trailing" secondItem="Bfw-Uw-6FM" secondAttribute="trailing" id="YfG-Bb-MhI"/>
+                            <constraint firstAttribute="bottom" secondItem="BHS-eW-9qf" secondAttribute="bottom" id="e24-qa-C6l"/>
+                            <constraint firstItem="BHS-eW-9qf" firstAttribute="leading" secondItem="Bfw-Uw-6FM" secondAttribute="leading" id="lhh-6u-amJ"/>
+                            <constraint firstAttribute="trailing" secondItem="BHS-eW-9qf" secondAttribute="trailing" id="rRF-3H-Ann"/>
+                            <constraint firstItem="BHS-eW-9qf" firstAttribute="top" secondItem="PPG-3d-MqE" secondAttribute="top" id="x0C-XZ-kfz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="TJq-Bb-Lax"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
