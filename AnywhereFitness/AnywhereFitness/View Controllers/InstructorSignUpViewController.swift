@@ -10,6 +10,12 @@ import UIKit
 
 class InstructorSignUpViewController: UIViewController {
 
+    @IBOutlet weak var signUpBackButton: UIButton!
+    @IBOutlet weak var instructorNameTextField: UITextField!
+    @IBOutlet weak var instructorPhoneTextField: UITextField!
+    @IBOutlet weak var instructorURLTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,5 +32,8 @@ class InstructorSignUpViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func instructorConfirmButton(_ sender: Any) {
+        
+    }
+    
 }
