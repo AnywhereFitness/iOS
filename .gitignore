@@ -41,6 +41,7 @@ xcuserdata/
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 # Pods/
 # Add this line if you want to avoid checking in source code from the Xcode workspace
+# *.xcworkspace
 # Carthage
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
 # Carthage/Checkouts
@@ -97,7 +98,6 @@ Dependencies/
 ### SwiftPackageManager ###
 Packages
 xcuserdata
-*.xcodeproj
 ### SwiftPM ###
 ### Vapor ###
 Config/secrets
@@ -132,8 +132,6 @@ Temporary Items
 ## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
 ## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
 ## Xcode Patch
-*.xcodeproj/*
-!*.xcodeproj/project.pbxproj
 !*.xcodeproj/xcshareddata/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
