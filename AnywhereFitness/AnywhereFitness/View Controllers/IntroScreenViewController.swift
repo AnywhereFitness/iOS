@@ -10,6 +10,8 @@ import UIKit
 
 class IntroScreenViewController: UIViewController {
 
+    @IBOutlet weak var signInButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,7 +25,27 @@ class IntroScreenViewController: UIViewController {
 
     }
     
+    @IBAction func signInTapped(_ sender: Any) {
+        let alert = UIAlertController(title: "Sign In", message: nil, preferredStyle: .alert)
+        alert.addTextField { (textField) in
+            textField.placeholder = "Username"
+            alert.addTextField { (textField) in
+                textField.placeholder = "Password"
+            }
+        }
+        let action = UIAlertAction(title: "Submit", style: .default) { (_) in
+            let username = alert.textFields?.first?.text
+            let password = alert.textFields?.last?.text
+            
+            // NETWORK REQUEST HERE TO POST REQUEST AND DIRECT TO INSTRUCTOR OR CLIENT HOME SCREEN DEPENDING ON USER TYPE.
+        }
 
+        alert.addAction(action)
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
+        
+    }
+    
     /*
     // MARK: - Navigation
 
