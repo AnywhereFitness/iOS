@@ -534,23 +534,13 @@
 				857734F723C4F3D7000FABC3 /* AppDelegate.swift in Sources */,
 				8577355723C512CE000FABC3 /* InstructorSignUpViewController.swift in Sources */,
 				8577352E23C4FCBF000FABC3 /* IntroScreenViewController.swift in Sources */,
-<<<<<<< Updated upstream
-				8577355C23C58506000FABC3 /* CreateClassViewController.swift in Sources */,
-				8577356023C5AE8B000FABC3 /* CreateClassTwoViewController.swift in Sources */,
-=======
 				DD59826023C636CF005B9115 /* ClientRepresentation.swift in Sources */,
->>>>>>> Stashed changes
 				857734F923C4F3D7000FABC3 /* SceneDelegate.swift in Sources */,
 				DD59825623C57972005B9115 /* Class.swift in Sources */,
 				8577355523C512BD000FABC3 /* ClientSignUpViewController.swift in Sources */,
-<<<<<<< Updated upstream
-				8577356223C5B31A000FABC3 /* CreateClassThreeViewController.swift in Sources */,
-				8577355E23C58549000FABC3 /* ManageClassesViewController.swift in Sources */,
-=======
 				DD59826223C636D9005B9115 /* InstructorRepresentation.swift in Sources */,
 				DD59825C23C57AAC005B9115 /* CoreDataStack.swift in Sources */,
 				DD59826423C64118005B9115 /* BearerToken.swift in Sources */,
->>>>>>> Stashed changes
 				8577355923C51EC6000FABC3 /* InstructorStartViewController.swift in Sources */,
 				8577350123C4F3D7000FABC3 /* AnywhereFitness.xcdatamodeld in Sources */,
 				DD59825E23C636C5005B9115 /* ClassRepresentation.swift in Sources */,
