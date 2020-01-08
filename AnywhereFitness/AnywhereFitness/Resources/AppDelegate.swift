@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import DropDown
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Remove Menu Bar Shadow
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        DropDown.startListeningToKeyboard()
         
         return true
     }
