@@ -23,17 +23,17 @@ class CreateClassFourViewController: UIViewController {
     
     @IBAction func finishButtonTapped(_ sender: Any) {
         
-            let alert = UIAlertController(title: "ClassCreated!", message: "Your class has been sucessfully created!", preferredStyle: .alert)
-
-                   }
-                   let action = UIAlertAction(title: "Continue", style: .default) { (_) in
-                    
-                    
-                   }
-        
-                   alert.addAction(action)
-
-                   present(alert, animated: true, completion: nil)
+//            let alert = UIAlertController(title: "ClassCreated!", message: "Your class has been sucessfully created!", preferredStyle: .alert)
+//
+//                   }
+//                   let action = UIAlertAction(title: "Continue", style: .default) { (_) in
+//                    
+//                    
+//                   }
+//        
+//                   alert.addAction(action)
+//
+//                   present(alert, animated: true, completion: nil)
         
     }
     

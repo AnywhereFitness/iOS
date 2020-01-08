@@ -1,14 +1,14 @@
 //
-//  ManageClassesViewController.swift
+//  ClassDetailViewController.swift
 //  AnywhereFitness
 //
-//  Created by Brandi Bailey on 1/7/20.
+//  Created by Brandi Bailey on 1/8/20.
 //  Copyright © 2020 Brandi Bailey. All rights reserved.
 //
 
 import UIKit
 
-class ManageClassesViewController: UIViewController {
+class ClassDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,5 +26,4 @@ class ManageClassesViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

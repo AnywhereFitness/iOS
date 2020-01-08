@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
         DropDown.startListeningToKeyboard()
         
+        
         return true
     }
 

@@ -26,10 +26,11 @@
 		8577355723C512CE000FABC3 /* InstructorSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577355623C512CE000FABC3 /* InstructorSignUpViewController.swift */; };
 		8577355923C51EC6000FABC3 /* InstructorStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577355823C51EC6000FABC3 /* InstructorStartViewController.swift */; };
 		8577355C23C58506000FABC3 /* CreateClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577355B23C58505000FABC3 /* CreateClassViewController.swift */; };
-		8577355E23C58549000FABC3 /* ManageClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577355D23C58549000FABC3 /* ManageClassesViewController.swift */; };
 		8577356023C5AE8B000FABC3 /* CreateClassTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577355F23C5AE8B000FABC3 /* CreateClassTwoViewController.swift */; };
 		8577356223C5B31A000FABC3 /* CreateClassThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577356123C5B31A000FABC3 /* CreateClassThreeViewController.swift */; };
 		8577356523C641E4000FABC3 /* CreateClassFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577356423C641E4000FABC3 /* CreateClassFourViewController.swift */; };
+		8577356723C687E0000FABC3 /* ManageClassesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577356623C687E0000FABC3 /* ManageClassesTableViewController.swift */; };
+		8577356923C68EFE000FABC3 /* ClassDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577356823C68EFE000FABC3 /* ClassDetailViewController.swift */; };
 		9030215A10A4851E95B3516C /* Pods_AnywhereFitnessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2495655C6BCE1A095F8635 /* Pods_AnywhereFitnessTests.framework */; };
 		C6844540EE48A320DD59757A /* Pods_AnywhereFitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461EDEFF71926266856CF6A9 /* Pods_AnywhereFitness.framework */; };
 /* End PBXBuildFile section */
@@ -81,10 +82,11 @@
 		8577355623C512CE000FABC3 /* InstructorSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorSignUpViewController.swift; sourceTree = "<group>"; };
 		8577355823C51EC6000FABC3 /* InstructorStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorStartViewController.swift; sourceTree = "<group>"; };
 		8577355B23C58505000FABC3 /* CreateClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateClassViewController.swift; sourceTree = "<group>"; };
-		8577355D23C58549000FABC3 /* ManageClassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageClassesViewController.swift; sourceTree = "<group>"; };
 		8577355F23C5AE8B000FABC3 /* CreateClassTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateClassTwoViewController.swift; sourceTree = "<group>"; };
 		8577356123C5B31A000FABC3 /* CreateClassThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateClassThreeViewController.swift; sourceTree = "<group>"; };
 		8577356423C641E4000FABC3 /* CreateClassFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateClassFourViewController.swift; sourceTree = "<group>"; };
+		8577356623C687E0000FABC3 /* ManageClassesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageClassesTableViewController.swift; sourceTree = "<group>"; };
+		8577356823C68EFE000FABC3 /* ClassDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailViewController.swift; sourceTree = "<group>"; };
 		8A79E13AFD04A7556E76BE75 /* Pods-AnywhereFitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnywhereFitness.release.xcconfig"; path = "Target Support Files/Pods-AnywhereFitness/Pods-AnywhereFitness.release.xcconfig"; sourceTree = "<group>"; };
 		CBA1605C75289AC8DBF3ABCF /* Pods_AnywhereFitness_AnywhereFitnessUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnywhereFitness_AnywhereFitnessUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4D965CDA59AD6E088CFE1C /* Pods-AnywhereFitness-AnywhereFitnessUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnywhereFitness-AnywhereFitnessUITests.release.xcconfig"; path = "Target Support Files/Pods-AnywhereFitness-AnywhereFitnessUITests/Pods-AnywhereFitness-AnywhereFitnessUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -240,7 +242,8 @@
 				8577355623C512CE000FABC3 /* InstructorSignUpViewController.swift */,
 				8577355823C51EC6000FABC3 /* InstructorStartViewController.swift */,
 				8577356323C5B327000FABC3 /* Create A Class VCs */,
-				8577355D23C58549000FABC3 /* ManageClassesViewController.swift */,
+				8577356623C687E0000FABC3 /* ManageClassesTableViewController.swift */,
+				8577356823C68EFE000FABC3 /* ClassDetailViewController.swift */,
 			);
 			path = Instructors;
 			sourceTree = "<group>";
@@ -513,12 +516,13 @@
 				857734F723C4F3D7000FABC3 /* AppDelegate.swift in Sources */,
 				8577355723C512CE000FABC3 /* InstructorSignUpViewController.swift in Sources */,
 				8577352E23C4FCBF000FABC3 /* IntroScreenViewController.swift in Sources */,
+				8577356923C68EFE000FABC3 /* ClassDetailViewController.swift in Sources */,
+				8577356723C687E0000FABC3 /* ManageClassesTableViewController.swift in Sources */,
 				8577355C23C58506000FABC3 /* CreateClassViewController.swift in Sources */,
 				8577356023C5AE8B000FABC3 /* CreateClassTwoViewController.swift in Sources */,
 				857734F923C4F3D7000FABC3 /* SceneDelegate.swift in Sources */,
 				8577355523C512BD000FABC3 /* ClientSignUpViewController.swift in Sources */,
 				8577356223C5B31A000FABC3 /* CreateClassThreeViewController.swift in Sources */,
-				8577355E23C58549000FABC3 /* ManageClassesViewController.swift in Sources */,
 				8577355923C51EC6000FABC3 /* InstructorStartViewController.swift in Sources */,
 				8577350123C4F3D7000FABC3 /* AnywhereFitness.xcdatamodeld in Sources */,
 				8577356523C641E4000FABC3 /* CreateClassFourViewController.swift in Sources */,
