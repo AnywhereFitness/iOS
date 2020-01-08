@@ -781,7 +781,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="jyP-oQ-RQ7">
                                 <rect key="frame" x="20" y="140" width="374" height="314"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t2D-8v-69P" customClass="CreateC">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t2D-8v-69P">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
                                         <color key="backgroundColor" white="0.94348334369999998" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -790,7 +790,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="street-address"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="When To Arrive" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zfm-RX-ikn" customClass="CreateC">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="When To Arrive" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zfm-RX-ikn">
                                         <rect key="frame" x="0.0" y="107" width="374" height="60"/>
                                         <color key="backgroundColor" white="0.94348334369999998" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -826,6 +826,9 @@
                                 <state key="normal" title="Finish">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="finishButtonTapped:" destination="4DW-Sv-LTF" eventType="touchUpInside" id="hDJ-pl-wwj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -843,6 +846,12 @@
                         <viewLayoutGuide key="safeArea" id="e5a-h0-Sgd"/>
                     </view>
                     <navigationItem key="navigationItem" id="AMw-GH-n3r"/>
+                    <connections>
+                        <outlet property="addressTextField" destination="t2D-8v-69P" id="eJc-30-hOS"/>
+                        <outlet property="finishCreateClassButton" destination="dDC-FA-z3G" id="haS-tm-qhX"/>
+                        <outlet property="whatYouShouldKnowTextField" destination="NrY-yL-iWi" id="vZU-dT-vlS"/>
+                        <outlet property="whenToArriveTextField" destination="Zfm-RX-ikn" id="JDQ-tg-EVK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O9Z-2p-ZP8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
