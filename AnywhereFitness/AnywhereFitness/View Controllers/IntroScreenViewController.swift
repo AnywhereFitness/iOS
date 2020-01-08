@@ -36,6 +36,8 @@ class IntroScreenViewController: UIViewController {
         let action = UIAlertAction(title: "Submit", style: .default) { (_) in
             let username = alert.textFields?.first?.text
             let password = alert.textFields?.last?.text
+            
+            // NETWORK REQUEST HERE TO POST REQUEST AND DIRECT TO INSTRUCTOR OR CLIENT HOME SCREEN DEPENDING ON USER TYPE.
         }
 
         alert.addAction(action)

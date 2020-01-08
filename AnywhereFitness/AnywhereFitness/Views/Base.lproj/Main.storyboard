@@ -102,7 +102,7 @@
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
-                                                                    <segue destination="9t6-XK-3Gd" kind="show" id="VN7-JW-hb2"/>
+                                                                    <segue destination="9t6-XK-3Gd" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="VN7-JW-hb2"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -172,7 +172,7 @@
         <!--Anywhere Fitness-->
         <scene sceneID="LyK-eR-rpk">
             <objects>
-                <viewController title="Anywhere Fitness" modalPresentationStyle="overFullScreen" id="Hrv-HC-2mn" customClass="InstructorSignUpViewController" customModule="AnywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Anywhere Fitness" modalPresentationStyle="pageSheet" id="Hrv-HC-2mn" customClass="InstructorSignUpViewController" customModule="AnywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kdh-PC-3sy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -245,7 +245,6 @@
                         <viewLayoutGuide key="safeArea" id="7mp-71-Tbh"/>
                     </view>
                     <navigationItem key="navigationItem" id="dCd-Jc-vWn"/>
-                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="instructorNameTextField" destination="0LK-mN-KQi" id="8Yk-Mu-IQg"/>
                         <outlet property="instructorPhoneTextField" destination="6cQ-ae-CVq" id="sfo-rz-n0E"/>
