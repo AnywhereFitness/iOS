@@ -29,13 +29,11 @@
 		C6844540EE48A320DD59757A /* Pods_AnywhereFitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461EDEFF71926266856CF6A9 /* Pods_AnywhereFitness.framework */; };
 		DD59825623C57972005B9115 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59825523C57972005B9115 /* Class.swift */; };
 		DD59825823C57979005B9115 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59825723C57979005B9115 /* Client.swift */; };
-		DD59825A23C57982005B9115 /* Instructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59825923C57982005B9115 /* Instructor.swift */; };
 		DD59825C23C57AAC005B9115 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59825B23C57AAC005B9115 /* CoreDataStack.swift */; };
 		DD59825E23C636C5005B9115 /* ClassRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59825D23C636C5005B9115 /* ClassRepresentation.swift */; };
-		DD59826023C636CF005B9115 /* ClientRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59825F23C636CF005B9115 /* ClientRepresentation.swift */; };
-		DD59826223C636D9005B9115 /* InstructorRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59826123C636D9005B9115 /* InstructorRepresentation.swift */; };
 		DD59826423C64118005B9115 /* BearerToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59826323C64118005B9115 /* BearerToken.swift */; };
 		DD59826723C651CD005B9115 /* AnytimeFitnessAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59826623C651CD005B9115 /* AnytimeFitnessAPI.swift */; };
+		DD59826923C65A59005B9115 /* UserRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59826823C65A59005B9115 /* UserRepresentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,13 +91,11 @@
 		CC4D965CDA59AD6E088CFE1C /* Pods-AnywhereFitness-AnywhereFitnessUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnywhereFitness-AnywhereFitnessUITests.release.xcconfig"; path = "Target Support Files/Pods-AnywhereFitness-AnywhereFitnessUITests/Pods-AnywhereFitness-AnywhereFitnessUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DD59825523C57972005B9115 /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
 		DD59825723C57979005B9115 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
-		DD59825923C57982005B9115 /* Instructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructor.swift; sourceTree = "<group>"; };
 		DD59825B23C57AAC005B9115 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		DD59825D23C636C5005B9115 /* ClassRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRepresentation.swift; sourceTree = "<group>"; };
-		DD59825F23C636CF005B9115 /* ClientRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientRepresentation.swift; sourceTree = "<group>"; };
-		DD59826123C636D9005B9115 /* InstructorRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorRepresentation.swift; sourceTree = "<group>"; };
 		DD59826323C64118005B9115 /* BearerToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearerToken.swift; sourceTree = "<group>"; };
 		DD59826623C651CD005B9115 /* AnytimeFitnessAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnytimeFitnessAPI.swift; sourceTree = "<group>"; };
+		DD59826823C65A59005B9115 /* UserRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepresentation.swift; sourceTree = "<group>"; };
 		EF2495655C6BCE1A095F8635 /* Pods_AnywhereFitnessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnywhereFitnessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -234,11 +230,9 @@
 				DD59825B23C57AAC005B9115 /* CoreDataStack.swift */,
 				DD59826323C64118005B9115 /* BearerToken.swift */,
 				DD59825D23C636C5005B9115 /* ClassRepresentation.swift */,
-				DD59825F23C636CF005B9115 /* ClientRepresentation.swift */,
-				DD59826123C636D9005B9115 /* InstructorRepresentation.swift */,
+				DD59826823C65A59005B9115 /* UserRepresentation.swift */,
 				DD59825523C57972005B9115 /* Class.swift */,
 				DD59825723C57979005B9115 /* Client.swift */,
-				DD59825923C57982005B9115 /* Instructor.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -541,17 +535,15 @@
 				857734F723C4F3D7000FABC3 /* AppDelegate.swift in Sources */,
 				8577355723C512CE000FABC3 /* InstructorSignUpViewController.swift in Sources */,
 				8577352E23C4FCBF000FABC3 /* IntroScreenViewController.swift in Sources */,
-				DD59826023C636CF005B9115 /* ClientRepresentation.swift in Sources */,
 				857734F923C4F3D7000FABC3 /* SceneDelegate.swift in Sources */,
 				DD59825623C57972005B9115 /* Class.swift in Sources */,
 				8577355523C512BD000FABC3 /* ClientSignUpViewController.swift in Sources */,
-				DD59826223C636D9005B9115 /* InstructorRepresentation.swift in Sources */,
+				DD59826923C65A59005B9115 /* UserRepresentation.swift in Sources */,
 				DD59825C23C57AAC005B9115 /* CoreDataStack.swift in Sources */,
 				DD59826423C64118005B9115 /* BearerToken.swift in Sources */,
 				8577355923C51EC6000FABC3 /* InstructorStartViewController.swift in Sources */,
 				8577350123C4F3D7000FABC3 /* AnywhereFitness.xcdatamodeld in Sources */,
 				DD59825E23C636C5005B9115 /* ClassRepresentation.swift in Sources */,
-				DD59825A23C57982005B9115 /* Instructor.swift in Sources */,
 				DD59825823C57979005B9115 /* Client.swift in Sources */,
 				DD59826723C651CD005B9115 /* AnytimeFitnessAPI.swift in Sources */,
 			);

@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-extension Client {
+extension User {
     
     convenience init(email: String,
                      firstName: String,

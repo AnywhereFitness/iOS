@@ -1,5 +1,5 @@
 //
-//  InstructorRepresentation.swift
+//  UserRepresentation.swift
 //  AnywhereFitness
 //
 //  Created by brian vilchez on 1/8/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class InstructorRepresentation: Codable {
+class USerRepresentation: Codable {
     
     let email: String
     let firstName: String
