@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct BearerToken: Codable {
+    let token: String
+}

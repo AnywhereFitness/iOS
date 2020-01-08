@@ -7,3 +7,23 @@
 //
 
 import Foundation
+import CoreData
+
+class CoreDataStack {
+    
+    static let shared = CoreDataStack()
+    
+    var container: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "AnywhereFitness")
+        container.loadPersistentStores { (_, error) in
+            if let error = error as NSError? {
+                NSLog("failed to load from persisten store: \(error)")
+            }
+        }
+        return container
+    }()
+    
+    var context: NSManagedObjectContext  {
+        return container.viewContext
+    }
+}
