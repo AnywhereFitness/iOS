@@ -31,6 +31,7 @@
 		DD59827723C6D82C005B9115 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59827623C6D82C005B9115 /* CoreDataStack.swift */; };
 		DD59827923C6D89C005B9115 /* Class+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59827823C6D89C005B9115 /* Class+Convenience.swift */; };
 		DD59827B23C6D902005B9115 /* UserRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59827A23C6D902005B9115 /* UserRepresentation.swift */; };
+		DD59827D23C6D941005B9115 /* ClassRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59827C23C6D941005B9115 /* ClassRepresentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		DD59827623C6D82C005B9115 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		DD59827823C6D89C005B9115 /* Class+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+Convenience.swift"; sourceTree = "<group>"; };
 		DD59827A23C6D902005B9115 /* UserRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepresentation.swift; sourceTree = "<group>"; };
+		DD59827C23C6D941005B9115 /* ClassRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRepresentation.swift; sourceTree = "<group>"; };
 		EF2495655C6BCE1A095F8635 /* Pods_AnywhereFitnessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnywhereFitnessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -224,6 +226,7 @@
 				DD59827423C6D76D005B9115 /* User+Convinience.swift */,
 				DD59827623C6D82C005B9115 /* CoreDataStack.swift */,
 				DD59827823C6D89C005B9115 /* Class+Convenience.swift */,
+				DD59827C23C6D941005B9115 /* ClassRepresentation.swift */,
 				DD59827A23C6D902005B9115 /* UserRepresentation.swift */,
 			);
 			path = Models;
@@ -532,6 +535,7 @@
 				DD59827523C6D76D005B9115 /* User+Convinience.swift in Sources */,
 				DD59827323C6D286005B9115 /* AnytimeFitness.xcdatamodeld in Sources */,
 				DD59827B23C6D902005B9115 /* UserRepresentation.swift in Sources */,
+				DD59827D23C6D941005B9115 /* ClassRepresentation.swift in Sources */,
 				8577355523C512BD000FABC3 /* ClientSignUpViewController.swift in Sources */,
 				8577355923C51EC6000FABC3 /* InstructorStartViewController.swift in Sources */,
 			);
