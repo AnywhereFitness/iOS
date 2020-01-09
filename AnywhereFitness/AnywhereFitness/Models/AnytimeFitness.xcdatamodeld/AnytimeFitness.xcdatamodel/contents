@@ -3,8 +3,13 @@
     <entity name="Class" representedClassName="Class" syncable="YES" codeGenerationType="class">
         <attribute name="duration" optional="YES" attributeType="String"/>
         <attribute name="endTime" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="instructor" optional="YES" attributeType="String"/>
+        <attribute name="intensityLevel" optional="YES" attributeType="String"/>
         <attribute name="location" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="requirements" optional="YES" attributeType="String"/>
+        <attribute name="size" optional="YES" attributeType="String"/>
         <attribute name="startTime" optional="YES" attributeType="String"/>
         <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
@@ -18,6 +23,6 @@
     </entity>
     <elements>
         <element name="User" positionX="-36" positionY="9" width="128" height="133"/>
-        <element name="Class" positionX="0" positionY="90" width="128" height="133"/>
+        <element name="Class" positionX="0" positionY="90" width="128" height="208"/>
     </elements>
 </model>
