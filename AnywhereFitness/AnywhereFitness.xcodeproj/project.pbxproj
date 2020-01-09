@@ -11,7 +11,6 @@
 		857734F723C4F3D7000FABC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857734F623C4F3D7000FABC3 /* AppDelegate.swift */; };
 		857734F923C4F3D7000FABC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857734F823C4F3D7000FABC3 /* SceneDelegate.swift */; };
 		857734FE23C4F3D7000FABC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857734FC23C4F3D7000FABC3 /* Main.storyboard */; };
-		8577350123C4F3D7000FABC3 /* AnywhereFitness.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 857734FF23C4F3D7000FABC3 /* AnywhereFitness.xcdatamodeld */; };
 		8577350323C4F3DA000FABC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8577350223C4F3DA000FABC3 /* Assets.xcassets */; };
 		8577350623C4F3DA000FABC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8577350423C4F3DA000FABC3 /* LaunchScreen.storyboard */; };
 		8577351123C4F3DA000FABC3 /* AnywhereFitnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577351023C4F3DA000FABC3 /* AnywhereFitnessTests.swift */; };
@@ -62,7 +61,6 @@
 		857734F623C4F3D7000FABC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		857734F823C4F3D7000FABC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		857734FD23C4F3D7000FABC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8577350023C4F3D7000FABC3 /* AnywhereFitness.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AnywhereFitness.xcdatamodel; sourceTree = "<group>"; };
 		8577350223C4F3DA000FABC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8577350523C4F3DA000FABC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8577350723C4F3DA000FABC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -219,7 +217,6 @@
 		8577352C23C4F451000FABC3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				857734FF23C4F3D7000FABC3 /* AnywhereFitness.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -524,7 +521,6 @@
 				8577355523C512BD000FABC3 /* ClientSignUpViewController.swift in Sources */,
 				8577356223C5B31A000FABC3 /* CreateClassThreeViewController.swift in Sources */,
 				8577355923C51EC6000FABC3 /* InstructorStartViewController.swift in Sources */,
-				8577350123C4F3D7000FABC3 /* AnywhereFitness.xcdatamodeld in Sources */,
 				8577356523C641E4000FABC3 /* CreateClassFourViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -860,19 +856,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		857734FF23C4F3D7000FABC3 /* AnywhereFitness.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				8577350023C4F3D7000FABC3 /* AnywhereFitness.xcdatamodel */,
-			);
-			currentVersion = 8577350023C4F3D7000FABC3 /* AnywhereFitness.xcdatamodel */;
-			path = AnywhereFitness.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 857734EB23C4F3D7000FABC3 /* Project object */;
 }
