@@ -1,26 +1,19 @@
 //
-//  ManageClassesTableViewController.swift
+//  AllClassesTableViewController.swift
 //  AnywhereFitness
 //
-//  Created by Brandi Bailey on 1/8/20.
+//  Created by Brandi Bailey on 1/9/20.
 //  Copyright © 2020 Brandi Bailey. All rights reserved.
 //
 
 import UIKit
 import CoreData
 
-class ManageClassesTableViewController: UITableViewController {
-
+class AllClassesTableViewController: UITableViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

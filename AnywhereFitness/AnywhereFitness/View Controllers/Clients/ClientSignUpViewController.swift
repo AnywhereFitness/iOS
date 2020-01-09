@@ -1,5 +1,5 @@
 //
-//  InstructorSignUpViewController.swift
+//  ClientSignUpViewController.swift
 //  AnywhereFitness
 //
 //  Created by Brandi Bailey on 1/7/20.
@@ -9,16 +9,11 @@
 import UIKit
 import CoreData
 
-class InstructorSignUpViewController: UIViewController {
+class ClientSignUpViewController: UIViewController {
 
-    @IBOutlet weak var signUpBackButton: UIButton!
-    @IBOutlet weak var instructorNameTextField: UITextField!
-    @IBOutlet weak var instructorPhoneTextField: UITextField!
-    @IBOutlet weak var instructorURLTextField: UITextField!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
     
@@ -32,8 +27,5 @@ class InstructorSignUpViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func instructorConfirmButton(_ sender: Any) {
-        
-    }
-    
+
 }
