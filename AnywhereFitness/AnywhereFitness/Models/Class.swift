@@ -11,6 +11,9 @@ import CoreData
 
 extension Class {
     
+
+    
+    
     convenience init(name: String,
                      duration:String,
                      startTime: String,

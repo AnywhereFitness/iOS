@@ -9,8 +9,10 @@
 import Foundation
 
 class AnytimeFitnessAPI {
-    static var token: BearerToken?
+    
+    var token: BearerToken?
     var baseURL = URL(string: "https://anywhere-fitness-api.herokuapp.com/api")!
+    var user: UserRepresentation?
     
     func login(withEmail email: String, password: String, completion: @escaping() -> Void = {}){
           let loginURL = baseURL.appendingPathComponent("auth").appendingPathComponent("login")
@@ -22,7 +24,7 @@ class AnytimeFitnessAPI {
           let json = """
                            {
                                 "email" : "\(email)",
-                               "password" : "\(password)"
+                                "password" : "\(password)"
                            }
                            """
           
@@ -42,9 +44,9 @@ class AnytimeFitnessAPI {
                      
                      do {
                       let decoder = JSONDecoder()
-                    //  print(String(data: data, encoding: .utf8))
-                    // self.instructor = try decoder.decode(InstructorRepresentation.self, from: data)
-                    // NetworkAPI.token = try decoder.decode(BearerToken.self, from: data)
+                    // print(String(data: data, encoding: .utf8))
+                     self.user = try decoder.decode(UserRepresentation.self, from: data)
+                     self.token = try decoder.decode(BearerToken.self, from: data)
                      } catch {
                       print("error decoding data: \(error)")
               }
@@ -85,11 +87,18 @@ class AnytimeFitnessAPI {
                         
                         do {
                          let decoder = JSONDecoder()
-                        // NetworkAPI.token = try decoder.decode(BearerToken.self, from: data)
+                         self.user = try decoder.decode(UserRepresentation.self, from: data)
+                         self.token = try decoder.decode(BearerToken.self, from: data)
                         } catch {
                          print("error decoding token: \(error)")
                  }
           }.resume()
             
       }
+    
+    func signOut() {
+        if token != nil {
+            token = nil
+        }
+    }
 }

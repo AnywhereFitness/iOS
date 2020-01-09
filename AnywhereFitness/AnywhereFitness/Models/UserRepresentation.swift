@@ -8,7 +8,7 @@
 
 import Foundation
 
-class USerRepresentation: Codable {
+struct UserRepresentation: Codable {
     
     let email: String
     let firstName: String
@@ -16,7 +16,7 @@ class USerRepresentation: Codable {
     let role: String
     let id: String
     
-    private enum ClientCodingKeys: String, CodingKey {
+    private enum UserCodingKeys: String, CodingKey {
       case user
         
         enum UserCodingKeys: String, CodingKey {
@@ -28,9 +28,17 @@ class USerRepresentation: Codable {
         }
     }
     
-    required init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: ClientCodingKeys.self)
-        let userContainer = try container.nestedContainer(keyedBy: ClientCodingKeys.UserCodingKeys.self, forKey: .user)
+    init(email: String, firstName: String, lastName:String, role: String, id: String) {
+        self.email = email
+        self.firstName = firstName
+        self.lastName = lastName
+        self.role = role
+        self.id = id 
+    }
+    
+  init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: UserCodingKeys.self)
+        let userContainer = try container.nestedContainer(keyedBy: UserCodingKeys.UserCodingKeys.self, forKey: .user)
         email = try userContainer.decode(String.self, forKey: .email)
         firstName = try userContainer.decode(String.self, forKey: .firstName)
         lastName = try userContainer.decode(String.self, forKey: .lastName)

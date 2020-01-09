@@ -11,6 +11,7 @@
         <attribute name="requirements" optional="YES" attributeType="String"/>
         <attribute name="startTime" optional="YES" attributeType="String"/>
         <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="classes" inverseEntity="User"/>
     </entity>
     <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
         <attribute name="email" optional="YES" attributeType="String"/>
@@ -18,9 +19,10 @@
         <attribute name="id" optional="YES" attributeType="String"/>
         <attribute name="lastName" optional="YES" attributeType="String"/>
         <attribute name="role" optional="YES" attributeType="String"/>
+        <relationship name="classes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Class" inverseName="user" inverseEntity="Class"/>
     </entity>
     <elements>
-        <element name="Class" positionX="-36" positionY="54" width="128" height="193"/>
-        <element name="User" positionX="-54" positionY="36" width="128" height="118"/>
+        <element name="Class" positionX="-36" positionY="54" width="128" height="208"/>
+        <element name="User" positionX="-54" positionY="36" width="128" height="133"/>
     </elements>
 </model>

@@ -11,6 +11,16 @@ import CoreData
 
 extension User {
     
+    var userRepresentation: UserRepresentation? {
+        guard let email = email,
+            let firstName = firstName,
+            let lastName = lastName,
+            let role = role,
+            let id = id else { return nil }
+        
+        return UserRepresentation(email: email, firstName: firstName, lastName: lastName, role: role, id: id)
+    }
+    
     convenience init(email: String,
                      firstName: String,
                      lastName: String,
