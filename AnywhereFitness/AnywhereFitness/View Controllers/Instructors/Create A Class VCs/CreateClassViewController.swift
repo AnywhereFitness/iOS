@@ -8,7 +8,7 @@
 
 import UIKit
 import DropDown
-import Core Data
+import CoreData
 
 class CreateClassViewController: UIViewController {
     

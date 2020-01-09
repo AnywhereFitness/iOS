@@ -7,18 +7,13 @@
 //
 
 import UIKit
-import Core Data
+import CoreData
 
 class AllClassesTableViewController: UITableViewController {
-
-    @IBOutlet weak var classNameLabel: UILabel!
-    @IBOutlet weak var classTypeLael: UILabel!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

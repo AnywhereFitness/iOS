@@ -1213,7 +1213,7 @@
         <!--Home-->
         <scene sceneID="8fW-up-uhH">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Xbm-17-REv" customClass="ClientStartViewController" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Xbm-17-REv" customClass="ClientStartViewController" customModule="AnywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S59-ky-Ldl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1535,7 +1535,7 @@
         <!--All Classes Table View Controller-->
         <scene sceneID="w34-5h-dMi">
             <objects>
-                <tableViewController id="Xoq-Yx-vIE" customClass="AllClassesTableViewController" sceneMemberID="viewController">
+                <tableViewController id="Xoq-Yx-vIE" customClass="AllClassesTableViewController" customModule="AnywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2Xq-G8-eRO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1548,15 +1548,15 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tU1-Hp-WMJ">
-                                            <rect key="frame" x="20" y="10" width="33.5" height="20.5"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Class Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tU1-Hp-WMJ">
+                                            <rect key="frame" x="20" y="10" width="91" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P4F-KC-oFh">
-                                            <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Class Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P4F-KC-oFh">
+                                            <rect key="frame" x="20" y="31.5" width="62" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
@@ -1575,10 +1575,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="gPv-WP-8RG"/>
-                    <connections>
-                        <outlet property="classNameLabel" destination="tU1-Hp-WMJ" id="shu-0m-eoH"/>
-                        <outlet property="classTypeLael" destination="P4F-KC-oFh" id="aB6-2U-X7q"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bga-3G-NNp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1587,7 +1583,7 @@
         <!--Registered Classes Table View Controller-->
         <scene sceneID="VMY-3l-PgU">
             <objects>
-                <tableViewController id="QgL-Je-Lnc" customClass="RegisteredClassesTableViewController" sceneMemberID="viewController">
+                <tableViewController id="QgL-Je-Lnc" customClass="RegisteredClassesTableViewController" customModule="AnywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="F2h-RT-5bM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Core Data
+import CoreData
 
 class InstructorStartViewController: UIViewController {
 
