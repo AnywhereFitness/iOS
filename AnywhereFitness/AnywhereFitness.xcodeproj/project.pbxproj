@@ -37,6 +37,8 @@
 		DD59828323C7911F005B9115 /* MockMessages.json in Resources */ = {isa = PBXBuildFile; fileRef = DD59828223C7911F005B9115 /* MockMessages.json */; };
 		DD59828523C7917F005B9115 /* UITesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59828423C7917F005B9115 /* UITesting.swift */; };
 		DD59828823C792E5005B9115 /* LocalNetworkingAPi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59828723C792E5005B9115 /* LocalNetworkingAPi.swift */; };
+		DD59828E23C79A40005B9115 /* Register.json in Resources */ = {isa = PBXBuildFile; fileRef = DD59828D23C79A40005B9115 /* Register.json */; };
+		DD59829023C79A83005B9115 /* Login.json in Resources */ = {isa = PBXBuildFile; fileRef = DD59828F23C79A83005B9115 /* Login.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,8 @@
 		DD59828223C7911F005B9115 /* MockMessages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockMessages.json; sourceTree = "<group>"; };
 		DD59828423C7917F005B9115 /* UITesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITesting.swift; sourceTree = "<group>"; };
 		DD59828723C792E5005B9115 /* LocalNetworkingAPi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetworkingAPi.swift; sourceTree = "<group>"; };
+		DD59828D23C79A40005B9115 /* Register.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Register.json; sourceTree = "<group>"; };
+		DD59828F23C79A83005B9115 /* Login.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Login.json; sourceTree = "<group>"; };
 		EF2495655C6BCE1A095F8635 /* Pods_AnywhereFitnessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnywhereFitnessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -299,6 +303,8 @@
 			isa = PBXGroup;
 			children = (
 				DD59828223C7911F005B9115 /* MockMessages.json */,
+				DD59828F23C79A83005B9115 /* Login.json */,
+				DD59828D23C79A40005B9115 /* Register.json */,
 				DD59828423C7917F005B9115 /* UITesting.swift */,
 				DD59828723C792E5005B9115 /* LocalNetworkingAPi.swift */,
 			);
@@ -415,7 +421,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD59828323C7911F005B9115 /* MockMessages.json in Resources */,
+				DD59829023C79A83005B9115 /* Login.json in Resources */,
 				8577354323C5017D000FABC3 /* Raleway-Light.ttf in Resources */,
+				DD59828E23C79A40005B9115 /* Register.json in Resources */,
 				8577350623C4F3DA000FABC3 /* LaunchScreen.storyboard in Resources */,
 				8577354723C5017D000FABC3 /* Raleway-Medium.ttf in Resources */,
 				8577354523C5017D000FABC3 /* Raleway-Regular.ttf in Resources */,
@@ -779,7 +787,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UF4PHTK7P6;
+				DEVELOPMENT_TEAM = HG3WUJ8982;
 				INFOPLIST_FILE = AnywhereFitnessTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -802,7 +810,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UF4PHTK7P6;
+				DEVELOPMENT_TEAM = HG3WUJ8982;
 				INFOPLIST_FILE = AnywhereFitnessTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -824,7 +832,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UF4PHTK7P6;
+				DEVELOPMENT_TEAM = HG3WUJ8982;
 				INFOPLIST_FILE = AnywhereFitnessUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -845,7 +853,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UF4PHTK7P6;
+				DEVELOPMENT_TEAM = HG3WUJ8982;
 				INFOPLIST_FILE = AnywhereFitnessUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

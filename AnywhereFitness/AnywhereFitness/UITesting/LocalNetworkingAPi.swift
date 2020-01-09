@@ -11,18 +11,20 @@ import Foundation
 extension AnytimeFitnessAPI {
     
     //MARK: - Properties
-    var mockDataURL: URL {
-          return Bundle.main.url(forResource: "MockMessages", withExtension: "json")!
+    var loginMockDataURL: URL {
+          return Bundle.main.url(forResource: "Login", withExtension: "json")!
       }
     
+    var registerMockDataURL: URL {
+        return Bundle.main.url(forResource: "Register", withExtension: "json")!
+    }
+    
     //MARK: - Helper Methods
-    func localLogin(withEmail email: String, password: String, completion: @escaping() -> Void = {}){
-          let loginURL = baseURL.appendingPathComponent("auth").appendingPathComponent("login")
-          
-          var request = URLRequest(url: loginURL)
-          request.httpMethod = "POST"
-          request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-          
+    func testLogin(withEmail email: String, password: String, completion: @escaping(NSError?) -> Void = { _ in }){
+        let loginURL = baseURL.appendingPathComponent("auth").appendingPathComponent("login")
+        var request = URLRequest(url: loginURL)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
           let json = """
                            {
                                 "email" : "\(email)",
@@ -33,11 +35,8 @@ extension AnytimeFitnessAPI {
           let jsonData = json.data(using: .utf8)
           request.httpBody = jsonData
           
-          URLSession.shared.dataTask(with: request) { (data, response, error) in
-              if let response = response as? HTTPURLResponse {
-                  print(response.statusCode)
-              }
-              
+          URLSession.shared.dataTask(with: request) { (data, _ , error) in
+           
               if let error = error {
                   print("error logging in user: \(error.localizedDescription)")
                   return
@@ -56,9 +55,8 @@ extension AnytimeFitnessAPI {
          
       }
       
-      func localRegister(withEmail email: String, password: String, role: String, firstName: String, lastName: String){
-          let registerURL = baseURL.appendingPathComponent("auth").appendingPathComponent("register")
-             
+    func testRegister(withEmail email: String, password: String, role: String, firstName: String, lastName: String, completion: @escaping(NSError?) -> Void = {_ in }){
+             let registerURL = baseURL.appendingPathComponent("auth").appendingPathComponent("register")
              var request = URLRequest(url: registerURL)
              request.httpMethod = "POST"
              request.setValue("application/json", forHTTPHeaderField: "content-type")
@@ -76,24 +74,17 @@ extension AnytimeFitnessAPI {
              let jsonData = json.data(using: .utf8)
              request.httpBody = jsonData
              
-             URLSession.shared.dataTask(with: request) { (data, response, error) in
+             URLSession.shared.dataTask(with: request) { (_ , response, error) in
                  if let response = response as? HTTPURLResponse {
                      print(response.statusCode)
                  }
-                 
-                 if let error = error {
-                     print("error logging in user: \(error)")
+                 if let error = error as NSError? {
+                     print("error registering user: \(error)")
+                    completion(error)
                      return
-                 }
-                 guard let data = data else { return }
-                        
-                        do {
-                         let decoder = JSONDecoder()
-                         self.user = try decoder.decode(UserRepresentation.self, from: data)
-                         self.token = try decoder.decode(BearerToken.self, from: data)
-                        } catch {
-                         print("error decoding token: \(error)")
-                 }
+                 } else {
+                    self.login(withEmail: email, password: password)
+                }
           }.resume()
             
       }
