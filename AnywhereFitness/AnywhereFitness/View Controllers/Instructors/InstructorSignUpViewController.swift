@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Core Data
 
 class InstructorSignUpViewController: UIViewController {
 

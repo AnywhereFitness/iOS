@@ -1575,6 +1575,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="gPv-WP-8RG"/>
+                    <connections>
+                        <outlet property="classNameLabel" destination="tU1-Hp-WMJ" id="shu-0m-eoH"/>
+                        <outlet property="classTypeLael" destination="P4F-KC-oFh" id="aB6-2U-X7q"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bga-3G-NNp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
