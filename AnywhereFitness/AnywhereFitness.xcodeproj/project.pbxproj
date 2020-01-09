@@ -29,6 +29,7 @@
 		DD59827323C6D286005B9115 /* AnytimeFitness.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD59827123C6D286005B9115 /* AnytimeFitness.xcdatamodeld */; };
 		DD59827523C6D76D005B9115 /* User+Convinience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59827423C6D76D005B9115 /* User+Convinience.swift */; };
 		DD59827723C6D82C005B9115 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59827623C6D82C005B9115 /* CoreDataStack.swift */; };
+		DD59827923C6D89C005B9115 /* Class+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59827823C6D89C005B9115 /* Class+Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		DD59827223C6D286005B9115 /* AnytimeFitness.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AnytimeFitness.xcdatamodel; sourceTree = "<group>"; };
 		DD59827423C6D76D005B9115 /* User+Convinience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Convinience.swift"; sourceTree = "<group>"; };
 		DD59827623C6D82C005B9115 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		DD59827823C6D89C005B9115 /* Class+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+Convenience.swift"; sourceTree = "<group>"; };
 		EF2495655C6BCE1A095F8635 /* Pods_AnywhereFitnessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnywhereFitnessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -219,6 +221,7 @@
 				DD59827123C6D286005B9115 /* AnytimeFitness.xcdatamodeld */,
 				DD59827423C6D76D005B9115 /* User+Convinience.swift */,
 				DD59827623C6D82C005B9115 /* CoreDataStack.swift */,
+				DD59827823C6D89C005B9115 /* Class+Convenience.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD59827923C6D89C005B9115 /* Class+Convenience.swift in Sources */,
 				857734F723C4F3D7000FABC3 /* AppDelegate.swift in Sources */,
 				8577355723C512CE000FABC3 /* InstructorSignUpViewController.swift in Sources */,
 				8577352E23C4FCBF000FABC3 /* IntroScreenViewController.swift in Sources */,
