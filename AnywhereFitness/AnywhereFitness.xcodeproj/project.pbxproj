@@ -34,6 +34,9 @@
 		DD59827D23C6D941005B9115 /* ClassRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59827C23C6D941005B9115 /* ClassRepresentation.swift */; };
 		DD59827F23C6D9F8005B9115 /* AnytimeFitnessAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59827E23C6D9F8005B9115 /* AnytimeFitnessAPI.swift */; };
 		DD59828123C6DA42005B9115 /* BearerToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59828023C6DA42005B9115 /* BearerToken.swift */; };
+		DD59828323C7911F005B9115 /* MockMessages.json in Resources */ = {isa = PBXBuildFile; fileRef = DD59828223C7911F005B9115 /* MockMessages.json */; };
+		DD59828523C7917F005B9115 /* UITesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59828423C7917F005B9115 /* UITesting.swift */; };
+		DD59828823C792E5005B9115 /* LocalNetworkingAPi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59828723C792E5005B9115 /* LocalNetworkingAPi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +99,9 @@
 		DD59827C23C6D941005B9115 /* ClassRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRepresentation.swift; sourceTree = "<group>"; };
 		DD59827E23C6D9F8005B9115 /* AnytimeFitnessAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnytimeFitnessAPI.swift; sourceTree = "<group>"; };
 		DD59828023C6DA42005B9115 /* BearerToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearerToken.swift; sourceTree = "<group>"; };
+		DD59828223C7911F005B9115 /* MockMessages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockMessages.json; sourceTree = "<group>"; };
+		DD59828423C7917F005B9115 /* UITesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITesting.swift; sourceTree = "<group>"; };
+		DD59828723C792E5005B9115 /* LocalNetworkingAPi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetworkingAPi.swift; sourceTree = "<group>"; };
 		EF2495655C6BCE1A095F8635 /* Pods_AnywhereFitnessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnywhereFitnessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -165,6 +171,7 @@
 		857734F523C4F3D7000FABC3 /* AnywhereFitness */ = {
 			isa = PBXGroup;
 			children = (
+				DD59828623C79288005B9115 /* UITesting */,
 				DD59826523C651AA005B9115 /* Networking */,
 				8577352A23C4F40C000FABC3 /* Resources */,
 				8577350723C4F3DA000FABC3 /* Info.plist */,
@@ -288,6 +295,16 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		DD59828623C79288005B9115 /* UITesting */ = {
+			isa = PBXGroup;
+			children = (
+				DD59828223C7911F005B9115 /* MockMessages.json */,
+				DD59828423C7917F005B9115 /* UITesting.swift */,
+				DD59828723C792E5005B9115 /* LocalNetworkingAPi.swift */,
+			);
+			path = UITesting;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -397,6 +414,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD59828323C7911F005B9115 /* MockMessages.json in Resources */,
 				8577354323C5017D000FABC3 /* Raleway-Light.ttf in Resources */,
 				8577350623C4F3DA000FABC3 /* LaunchScreen.storyboard in Resources */,
 				8577354723C5017D000FABC3 /* Raleway-Medium.ttf in Resources */,
@@ -532,6 +550,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD59828823C792E5005B9115 /* LocalNetworkingAPi.swift in Sources */,
 				DD59827923C6D89C005B9115 /* Class+Convenience.swift in Sources */,
 				857734F723C4F3D7000FABC3 /* AppDelegate.swift in Sources */,
 				8577355723C512CE000FABC3 /* InstructorSignUpViewController.swift in Sources */,
@@ -541,6 +560,7 @@
 				DD59827523C6D76D005B9115 /* User+Convinience.swift in Sources */,
 				DD59827323C6D286005B9115 /* AnytimeFitness.xcdatamodeld in Sources */,
 				DD59828123C6DA42005B9115 /* BearerToken.swift in Sources */,
+				DD59828523C7917F005B9115 /* UITesting.swift in Sources */,
 				DD59827B23C6D902005B9115 /* UserRepresentation.swift in Sources */,
 				DD59827F23C6D9F8005B9115 /* AnytimeFitnessAPI.swift in Sources */,
 				DD59827D23C6D941005B9115 /* ClassRepresentation.swift in Sources */,

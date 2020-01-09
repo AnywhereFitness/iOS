@@ -1,23 +1,22 @@
 //
-//  AnytimeFitnessAPI.swift
+//  LocalNetworkingAPi.swift
 //  AnywhereFitness
 //
-//  Created by brian vilchez on 1/8/20.
+//  Created by brian vilchez on 1/9/20.
 //  Copyright © 2020 Brandi Bailey. All rights reserved.
 //
 
 import Foundation
 
-class AnytimeFitnessAPI {
+extension AnytimeFitnessAPI {
     
-    var token: BearerToken?
-    var baseURL = URL(string: "https://anywhere-fitness-api.herokuapp.com/api")!
-    var user: UserRepresentation?
+    //MARK: - Properties
+    var mockDataURL: URL {
+          return Bundle.main.url(forResource: "MockMessages", withExtension: "json")!
+      }
     
-    func login(withEmail email: String, password: String, completion: @escaping() -> Void = {}){
-        
-        
-        
+    //MARK: - Helper Methods
+    func localLogin(withEmail email: String, password: String, completion: @escaping() -> Void = {}){
           let loginURL = baseURL.appendingPathComponent("auth").appendingPathComponent("login")
           
           var request = URLRequest(url: loginURL)
@@ -57,7 +56,7 @@ class AnytimeFitnessAPI {
          
       }
       
-      func register(withEmail email: String, password: String, role: String, firstName: String, lastName: String){
+      func localRegister(withEmail email: String, password: String, role: String, firstName: String, lastName: String){
           let registerURL = baseURL.appendingPathComponent("auth").appendingPathComponent("register")
              
              var request = URLRequest(url: registerURL)
@@ -98,10 +97,4 @@ class AnytimeFitnessAPI {
           }.resume()
             
       }
-    
-    func signOut() {
-        if token != nil {
-            token = nil
-        }
-    }
 }
