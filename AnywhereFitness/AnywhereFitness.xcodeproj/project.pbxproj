@@ -28,6 +28,7 @@
 		C6844540EE48A320DD59757A /* Pods_AnywhereFitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461EDEFF71926266856CF6A9 /* Pods_AnywhereFitness.framework */; };
 		DD59827323C6D286005B9115 /* AnytimeFitness.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD59827123C6D286005B9115 /* AnytimeFitness.xcdatamodeld */; };
 		DD59827523C6D76D005B9115 /* User+Convinience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59827423C6D76D005B9115 /* User+Convinience.swift */; };
+		DD59827723C6D82C005B9115 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59827623C6D82C005B9115 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		CC4D965CDA59AD6E088CFE1C /* Pods-AnywhereFitness-AnywhereFitnessUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnywhereFitness-AnywhereFitnessUITests.release.xcconfig"; path = "Target Support Files/Pods-AnywhereFitness-AnywhereFitnessUITests/Pods-AnywhereFitness-AnywhereFitnessUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DD59827223C6D286005B9115 /* AnytimeFitness.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AnytimeFitness.xcdatamodel; sourceTree = "<group>"; };
 		DD59827423C6D76D005B9115 /* User+Convinience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Convinience.swift"; sourceTree = "<group>"; };
+		DD59827623C6D82C005B9115 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		EF2495655C6BCE1A095F8635 /* Pods_AnywhereFitnessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnywhereFitnessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -216,6 +218,7 @@
 			children = (
 				DD59827123C6D286005B9115 /* AnytimeFitness.xcdatamodeld */,
 				DD59827423C6D76D005B9115 /* User+Convinience.swift */,
+				DD59827623C6D82C005B9115 /* CoreDataStack.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 				857734F723C4F3D7000FABC3 /* AppDelegate.swift in Sources */,
 				8577355723C512CE000FABC3 /* InstructorSignUpViewController.swift in Sources */,
 				8577352E23C4FCBF000FABC3 /* IntroScreenViewController.swift in Sources */,
+				DD59827723C6D82C005B9115 /* CoreDataStack.swift in Sources */,
 				857734F923C4F3D7000FABC3 /* SceneDelegate.swift in Sources */,
 				DD59827523C6D76D005B9115 /* User+Convinience.swift in Sources */,
 				DD59827323C6D286005B9115 /* AnytimeFitness.xcdatamodeld in Sources */,
