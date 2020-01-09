@@ -9,26 +9,20 @@
         <attribute name="location" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="requirements" optional="YES" attributeType="String"/>
+        <attribute name="size" optional="YES" attributeType="String"/>
         <attribute name="startTime" optional="YES" attributeType="String"/>
         <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="Client" representedClassName="Client" syncable="YES" codeGenerationType="class">
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
         <attribute name="email" optional="YES" attributeType="String"/>
         <attribute name="firstName" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="String"/>
         <attribute name="lastName" optional="YES" attributeType="String"/>
-        <attribute name="role" optional="YES" attributeType="String"/>
-    </entity>
-    <entity name="Instructor" representedClassName="Instructor" syncable="YES" codeGenerationType="class">
-        <attribute name="email" optional="YES" attributeType="String"/>
-        <attribute name="firstName" optional="YES" attributeType="String"/>
-        <attribute name="id" optional="YES" attributeType="String"/>
-        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
         <attribute name="role" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Instructor" positionX="-63" positionY="-18" width="128" height="118"/>
-        <element name="Client" positionX="-54" positionY="36" width="128" height="118"/>
-        <element name="Class" positionX="-36" positionY="54" width="128" height="193"/>
+        <element name="User" positionX="-36" positionY="9" width="128" height="133"/>
+        <element name="Class" positionX="0" positionY="90" width="128" height="208"/>
     </elements>
 </model>

@@ -11,7 +11,6 @@
 		857734F723C4F3D7000FABC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857734F623C4F3D7000FABC3 /* AppDelegate.swift */; };
 		857734F923C4F3D7000FABC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857734F823C4F3D7000FABC3 /* SceneDelegate.swift */; };
 		857734FE23C4F3D7000FABC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857734FC23C4F3D7000FABC3 /* Main.storyboard */; };
-		8577350123C4F3D7000FABC3 /* AnywhereFitness.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 857734FF23C4F3D7000FABC3 /* AnywhereFitness.xcdatamodeld */; };
 		8577350323C4F3DA000FABC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8577350223C4F3DA000FABC3 /* Assets.xcassets */; };
 		8577350623C4F3DA000FABC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8577350423C4F3DA000FABC3 /* LaunchScreen.storyboard */; };
 		8577351123C4F3DA000FABC3 /* AnywhereFitnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577351023C4F3DA000FABC3 /* AnywhereFitnessTests.swift */; };
@@ -25,20 +24,16 @@
 		8577355523C512BD000FABC3 /* ClientSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577355423C512BD000FABC3 /* ClientSignUpViewController.swift */; };
 		8577355723C512CE000FABC3 /* InstructorSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577355623C512CE000FABC3 /* InstructorSignUpViewController.swift */; };
 		8577355923C51EC6000FABC3 /* InstructorStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577355823C51EC6000FABC3 /* InstructorStartViewController.swift */; };
-		8577355C23C58506000FABC3 /* CreateClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577355B23C58505000FABC3 /* CreateClassViewController.swift */; };
-		8577355E23C58549000FABC3 /* ManageClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577355D23C58549000FABC3 /* ManageClassesViewController.swift */; };
-		8577356023C5AE8B000FABC3 /* CreateClassTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577355F23C5AE8B000FABC3 /* CreateClassTwoViewController.swift */; };
-		8577356223C5B31A000FABC3 /* CreateClassThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577356123C5B31A000FABC3 /* CreateClassThreeViewController.swift */; };
 		9030215A10A4851E95B3516C /* Pods_AnywhereFitnessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2495655C6BCE1A095F8635 /* Pods_AnywhereFitnessTests.framework */; };
 		C6844540EE48A320DD59757A /* Pods_AnywhereFitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461EDEFF71926266856CF6A9 /* Pods_AnywhereFitness.framework */; };
-		DD59825623C57972005B9115 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59825523C57972005B9115 /* Class.swift */; };
-		DD59825823C57979005B9115 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59825723C57979005B9115 /* Client.swift */; };
-		DD59825A23C57982005B9115 /* Instructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59825923C57982005B9115 /* Instructor.swift */; };
-		DD59825C23C57AAC005B9115 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59825B23C57AAC005B9115 /* CoreDataStack.swift */; };
-		DD59825E23C636C5005B9115 /* ClassRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59825D23C636C5005B9115 /* ClassRepresentation.swift */; };
-		DD59826023C636CF005B9115 /* ClientRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59825F23C636CF005B9115 /* ClientRepresentation.swift */; };
-		DD59826223C636D9005B9115 /* InstructorRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59826123C636D9005B9115 /* InstructorRepresentation.swift */; };
-		DD59826423C64118005B9115 /* BearerToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59826323C64118005B9115 /* BearerToken.swift */; };
+		DD59827323C6D286005B9115 /* AnytimeFitness.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD59827123C6D286005B9115 /* AnytimeFitness.xcdatamodeld */; };
+		DD59827523C6D76D005B9115 /* User+Convinience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59827423C6D76D005B9115 /* User+Convinience.swift */; };
+		DD59827723C6D82C005B9115 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59827623C6D82C005B9115 /* CoreDataStack.swift */; };
+		DD59827923C6D89C005B9115 /* Class+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59827823C6D89C005B9115 /* Class+Convenience.swift */; };
+		DD59827B23C6D902005B9115 /* UserRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59827A23C6D902005B9115 /* UserRepresentation.swift */; };
+		DD59827D23C6D941005B9115 /* ClassRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59827C23C6D941005B9115 /* ClassRepresentation.swift */; };
+		DD59827F23C6D9F8005B9115 /* AnytimeFitnessAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59827E23C6D9F8005B9115 /* AnytimeFitnessAPI.swift */; };
+		DD59828123C6DA42005B9115 /* BearerToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59828023C6DA42005B9115 /* BearerToken.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +63,6 @@
 		857734F623C4F3D7000FABC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		857734F823C4F3D7000FABC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		857734FD23C4F3D7000FABC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8577350023C4F3D7000FABC3 /* AnywhereFitness.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AnywhereFitness.xcdatamodel; sourceTree = "<group>"; };
 		8577350223C4F3DA000FABC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8577350523C4F3DA000FABC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8577350723C4F3DA000FABC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,14 +88,14 @@
 		8A79E13AFD04A7556E76BE75 /* Pods-AnywhereFitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnywhereFitness.release.xcconfig"; path = "Target Support Files/Pods-AnywhereFitness/Pods-AnywhereFitness.release.xcconfig"; sourceTree = "<group>"; };
 		CBA1605C75289AC8DBF3ABCF /* Pods_AnywhereFitness_AnywhereFitnessUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnywhereFitness_AnywhereFitnessUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4D965CDA59AD6E088CFE1C /* Pods-AnywhereFitness-AnywhereFitnessUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnywhereFitness-AnywhereFitnessUITests.release.xcconfig"; path = "Target Support Files/Pods-AnywhereFitness-AnywhereFitnessUITests/Pods-AnywhereFitness-AnywhereFitnessUITests.release.xcconfig"; sourceTree = "<group>"; };
-		DD59825523C57972005B9115 /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
-		DD59825723C57979005B9115 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
-		DD59825923C57982005B9115 /* Instructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructor.swift; sourceTree = "<group>"; };
-		DD59825B23C57AAC005B9115 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		DD59825D23C636C5005B9115 /* ClassRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRepresentation.swift; sourceTree = "<group>"; };
-		DD59825F23C636CF005B9115 /* ClientRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientRepresentation.swift; sourceTree = "<group>"; };
-		DD59826123C636D9005B9115 /* InstructorRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorRepresentation.swift; sourceTree = "<group>"; };
-		DD59826323C64118005B9115 /* BearerToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearerToken.swift; sourceTree = "<group>"; };
+		DD59827223C6D286005B9115 /* AnytimeFitness.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AnytimeFitness.xcdatamodel; sourceTree = "<group>"; };
+		DD59827423C6D76D005B9115 /* User+Convinience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Convinience.swift"; sourceTree = "<group>"; };
+		DD59827623C6D82C005B9115 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		DD59827823C6D89C005B9115 /* Class+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+Convenience.swift"; sourceTree = "<group>"; };
+		DD59827A23C6D902005B9115 /* UserRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepresentation.swift; sourceTree = "<group>"; };
+		DD59827C23C6D941005B9115 /* ClassRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRepresentation.swift; sourceTree = "<group>"; };
+		DD59827E23C6D9F8005B9115 /* AnytimeFitnessAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnytimeFitnessAPI.swift; sourceTree = "<group>"; };
+		DD59828023C6DA42005B9115 /* BearerToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearerToken.swift; sourceTree = "<group>"; };
 		EF2495655C6BCE1A095F8635 /* Pods_AnywhereFitnessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnywhereFitnessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -171,6 +165,7 @@
 		857734F523C4F3D7000FABC3 /* AnywhereFitness */ = {
 			isa = PBXGroup;
 			children = (
+				DD59826523C651AA005B9115 /* Networking */,
 				8577352A23C4F40C000FABC3 /* Resources */,
 				8577350723C4F3DA000FABC3 /* Info.plist */,
 				8577352C23C4F451000FABC3 /* Models */,
@@ -231,15 +226,13 @@
 		8577352C23C4F451000FABC3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				857734FF23C4F3D7000FABC3 /* AnywhereFitness.xcdatamodeld */,
-				DD59825B23C57AAC005B9115 /* CoreDataStack.swift */,
-				DD59826323C64118005B9115 /* BearerToken.swift */,
-				DD59825D23C636C5005B9115 /* ClassRepresentation.swift */,
-				DD59825F23C636CF005B9115 /* ClientRepresentation.swift */,
-				DD59826123C636D9005B9115 /* InstructorRepresentation.swift */,
-				DD59825523C57972005B9115 /* Class.swift */,
-				DD59825723C57979005B9115 /* Client.swift */,
-				DD59825923C57982005B9115 /* Instructor.swift */,
+				DD59827123C6D286005B9115 /* AnytimeFitness.xcdatamodeld */,
+				DD59827423C6D76D005B9115 /* User+Convinience.swift */,
+				DD59828023C6DA42005B9115 /* BearerToken.swift */,
+				DD59827623C6D82C005B9115 /* CoreDataStack.swift */,
+				DD59827823C6D89C005B9115 /* Class+Convenience.swift */,
+				DD59827C23C6D941005B9115 /* ClassRepresentation.swift */,
+				DD59827A23C6D902005B9115 /* UserRepresentation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -285,6 +278,14 @@
 				EF2495655C6BCE1A095F8635 /* Pods_AnywhereFitnessTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD59826523C651AA005B9115 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DD59827E23C6D9F8005B9115 /* AnytimeFitnessAPI.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -531,31 +532,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD59827923C6D89C005B9115 /* Class+Convenience.swift in Sources */,
 				857734F723C4F3D7000FABC3 /* AppDelegate.swift in Sources */,
 				8577355723C512CE000FABC3 /* InstructorSignUpViewController.swift in Sources */,
 				8577352E23C4FCBF000FABC3 /* IntroScreenViewController.swift in Sources */,
-<<<<<<< Updated upstream
-				8577355C23C58506000FABC3 /* CreateClassViewController.swift in Sources */,
-				8577356023C5AE8B000FABC3 /* CreateClassTwoViewController.swift in Sources */,
-=======
-				DD59826023C636CF005B9115 /* ClientRepresentation.swift in Sources */,
->>>>>>> Stashed changes
+				DD59827723C6D82C005B9115 /* CoreDataStack.swift in Sources */,
 				857734F923C4F3D7000FABC3 /* SceneDelegate.swift in Sources */,
-				DD59825623C57972005B9115 /* Class.swift in Sources */,
+				DD59827523C6D76D005B9115 /* User+Convinience.swift in Sources */,
+				DD59827323C6D286005B9115 /* AnytimeFitness.xcdatamodeld in Sources */,
+				DD59828123C6DA42005B9115 /* BearerToken.swift in Sources */,
+				DD59827B23C6D902005B9115 /* UserRepresentation.swift in Sources */,
+				DD59827F23C6D9F8005B9115 /* AnytimeFitnessAPI.swift in Sources */,
+				DD59827D23C6D941005B9115 /* ClassRepresentation.swift in Sources */,
 				8577355523C512BD000FABC3 /* ClientSignUpViewController.swift in Sources */,
-<<<<<<< Updated upstream
-				8577356223C5B31A000FABC3 /* CreateClassThreeViewController.swift in Sources */,
-				8577355E23C58549000FABC3 /* ManageClassesViewController.swift in Sources */,
-=======
-				DD59826223C636D9005B9115 /* InstructorRepresentation.swift in Sources */,
-				DD59825C23C57AAC005B9115 /* CoreDataStack.swift in Sources */,
-				DD59826423C64118005B9115 /* BearerToken.swift in Sources */,
->>>>>>> Stashed changes
 				8577355923C51EC6000FABC3 /* InstructorStartViewController.swift in Sources */,
-				8577350123C4F3D7000FABC3 /* AnywhereFitness.xcdatamodeld in Sources */,
-				DD59825E23C636C5005B9115 /* ClassRepresentation.swift in Sources */,
-				DD59825A23C57982005B9115 /* Instructor.swift in Sources */,
-				DD59825823C57979005B9115 /* Client.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -892,13 +882,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		857734FF23C4F3D7000FABC3 /* AnywhereFitness.xcdatamodeld */ = {
+		DD59827123C6D286005B9115 /* AnytimeFitness.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				8577350023C4F3D7000FABC3 /* AnywhereFitness.xcdatamodel */,
+				DD59827223C6D286005B9115 /* AnytimeFitness.xcdatamodel */,
 			);
-			currentVersion = 8577350023C4F3D7000FABC3 /* AnywhereFitness.xcdatamodel */;
-			path = AnywhereFitness.xcdatamodeld;
+			currentVersion = DD59827223C6D286005B9115 /* AnytimeFitness.xcdatamodel */;
+			path = AnytimeFitness.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
