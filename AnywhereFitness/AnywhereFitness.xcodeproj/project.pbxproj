@@ -26,6 +26,7 @@
 		8577355923C51EC6000FABC3 /* InstructorStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577355823C51EC6000FABC3 /* InstructorStartViewController.swift */; };
 		9030215A10A4851E95B3516C /* Pods_AnywhereFitnessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2495655C6BCE1A095F8635 /* Pods_AnywhereFitnessTests.framework */; };
 		C6844540EE48A320DD59757A /* Pods_AnywhereFitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461EDEFF71926266856CF6A9 /* Pods_AnywhereFitness.framework */; };
+		DD59827323C6D286005B9115 /* AnytimeFitness.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD59827123C6D286005B9115 /* AnytimeFitness.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		8A79E13AFD04A7556E76BE75 /* Pods-AnywhereFitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnywhereFitness.release.xcconfig"; path = "Target Support Files/Pods-AnywhereFitness/Pods-AnywhereFitness.release.xcconfig"; sourceTree = "<group>"; };
 		CBA1605C75289AC8DBF3ABCF /* Pods_AnywhereFitness_AnywhereFitnessUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnywhereFitness_AnywhereFitnessUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4D965CDA59AD6E088CFE1C /* Pods-AnywhereFitness-AnywhereFitnessUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnywhereFitness-AnywhereFitnessUITests.release.xcconfig"; path = "Target Support Files/Pods-AnywhereFitness-AnywhereFitnessUITests/Pods-AnywhereFitness-AnywhereFitnessUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DD59827223C6D286005B9115 /* AnytimeFitness.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AnytimeFitness.xcdatamodel; sourceTree = "<group>"; };
 		EF2495655C6BCE1A095F8635 /* Pods_AnywhereFitnessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnywhereFitnessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -210,6 +212,7 @@
 		8577352C23C4F451000FABC3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DD59827123C6D286005B9115 /* AnytimeFitness.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -512,6 +515,7 @@
 				8577355723C512CE000FABC3 /* InstructorSignUpViewController.swift in Sources */,
 				8577352E23C4FCBF000FABC3 /* IntroScreenViewController.swift in Sources */,
 				857734F923C4F3D7000FABC3 /* SceneDelegate.swift in Sources */,
+				DD59827323C6D286005B9115 /* AnytimeFitness.xcdatamodeld in Sources */,
 				8577355523C512BD000FABC3 /* ClientSignUpViewController.swift in Sources */,
 				8577355923C51EC6000FABC3 /* InstructorStartViewController.swift in Sources */,
 			);
@@ -848,6 +852,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DD59827123C6D286005B9115 /* AnytimeFitness.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD59827223C6D286005B9115 /* AnytimeFitness.xcdatamodel */,
+			);
+			currentVersion = DD59827223C6D286005B9115 /* AnytimeFitness.xcdatamodel */;
+			path = AnytimeFitness.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 857734EB23C4F3D7000FABC3 /* Project object */;
 }
